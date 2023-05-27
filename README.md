@@ -15,6 +15,11 @@
 ```ps
 irm https://raw.githubusercontent.com/bonben365/wsandbox/main/winget.ps1 | iex
 ```
+### Microsoft Store
+```ps
+irm https://raw.githubusercontent.com/bonben365/wsandbox/main/store.ps1 | iex
+```
+
 ➡️Please inspect https://raw.githubusercontent.com/bonben365/winget-sandbox/main/install.ps1 prior to running any of these scripts to ensure safety. We already know it's safe, but you should verify the security and contents of any script from the internet you are not familiar with.
 
 ## Screenshots
