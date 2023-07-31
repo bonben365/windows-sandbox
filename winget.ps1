@@ -55,8 +55,9 @@ Write-Host
 Write-Host Installed packages:
 Write-Host
 # Checking installed apps
-$packages = @("Microsoft.VCLibs","DesktopAppInstaller","UI.Xaml")
-$report = ForEach ($package in $packages){Get-AppxPackage -Name *$package* | select Name,Version,Status }
+
+$packages = @("DesktopAppInstaller")
+$report = ForEach ($package in $packages){Get-AppxProvisionedPackage -Online | Where-Object {$_.DisplayName -like "*$package*"} | select DisplayName,Version}
 $report | format-table
 
 # Cleanup
