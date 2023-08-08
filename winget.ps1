@@ -19,8 +19,7 @@ $path = "$env:temp\temp"
 $ProgressPreference='Silent'
 $url = 'https://aka.ms/Microsoft.VCLibs.x64.14.00.Desktop.appx'
 (New-Object Net.WebClient).DownloadFile($url, "$env:temp\temp\Microsoft.VCLibs.x64.14.00.Desktop.appx")
-Add-AppxPackage -Path Microsoft.VCLibs.x64.14.00.Desktop.appx | Out-Null
-
+Add-AppxPackage -Path Microsoft.VCLibs.x64.14.00.Desktop.appx -ErrorAction SilentlyContinue | Out-Null
 #Download and extract Nuget
 Write-Host
 Write-Host Installing Nuget...
