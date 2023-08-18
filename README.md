@@ -13,10 +13,12 @@
 
 ### Windows Package Manager (Winget)
 ```ps
+Set-ExecutionPolicy Bypass Process -Force
 irm https://raw.githubusercontent.com/bonben365/wsandbox/main/winget.ps1 | iex
 ```
 ### Microsoft Store
 ```ps
+Set-ExecutionPolicy Bypass Process -Force
 irm https://raw.githubusercontent.com/bonben365/wsandbox/main/store.ps1 | iex
 ```
 
